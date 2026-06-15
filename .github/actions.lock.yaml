@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-06-11T15:38:12Z
+generated_at: 2026-06-15T13:14:59Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -27,9 +27,9 @@ trusted:
 external:
   - action: changesets/action
     refs:
-      - master
+      - 41adcfa1f4c9a2f03ee74a426a8878a2b8cf7b85
     occurrences:
-      master:
+      41adcfa1f4c9a2f03ee74a426a8878a2b8cf7b85:
         .github/workflows/release.yml:
           - jobs.release.steps.[4].uses
   - action: pnpm/action-setup

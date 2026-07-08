@@ -6,6 +6,9 @@ on:
       - master
       - main
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     name: Lint
@@ -20,7 +23,7 @@ jobs:
 
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: Setup pnpm
-        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        uses: step-security/action-setup@0ad50dc56a23060fa78b14cfcf0677c4e14b42bc # v5.0.0
         with:
           version: 8
       - name: Setup NodeJS
